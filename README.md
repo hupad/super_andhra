@@ -1,4 +1,4 @@
-# super_andhra
+# Super Andhra
 A simple sinatra app.
 
 The idea here is to scrape a news feed database fetch the feed and create end point to serve an iPhone app.
