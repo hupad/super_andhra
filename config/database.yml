@@ -1,0 +1,5 @@
+database: super_andhra
+username: root
+password: welcome
+host: localhost
+adapter: mysql2
