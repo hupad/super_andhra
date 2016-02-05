@@ -21,5 +21,10 @@ top_stories = page.css('div.home_left_column')
 TopStory.delete_all
 
 top_stories.each do |story|
-	top_story = TopStory.create!(story: story.values[0], story_url: story.values[1])
+	top_story = TopStory.create!(
+		story: story.values[1], 
+		story_url: story.values[0], 
+		created_at: Time.now, 
+		updated_at: Time.now
+	)
 end

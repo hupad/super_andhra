@@ -19,6 +19,7 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 1.hours do
+every 4.hours do
 	command "ruby /vagrant/super_andhra/scripts/top_stories_scraper.rb"
+	command "ruby /vagrant/super_andhra/scripts/update_top_stories_meta.rb"
 end

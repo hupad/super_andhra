@@ -11,11 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160204014109) do
+ActiveRecord::Schema.define(version: 20160204234124) do
 
   create_table "top_stories", force: :cascade do |t|
-    t.string "story",     limit: 255
-    t.string "story_url", limit: 255
+    t.string   "story",      limit: 255
+    t.string   "story_url",  limit: 255
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "image_url",  limit: 255
+    t.text     "content",    limit: 65535
   end
 
 end
