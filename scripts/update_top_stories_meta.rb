@@ -23,7 +23,7 @@ def update_story(info, story)
 	end
 
 	story.content = content.inner_text
-	puts story.inspect
+	
 	story.save
 end
 
