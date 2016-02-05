@@ -8,3 +8,4 @@ gem 'rake'
 gem 'json'
 gem 'nokogiri'
 gem 'whenever'
+gem "mini_magick"

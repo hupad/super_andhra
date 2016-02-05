@@ -27,16 +27,27 @@ def update_story(info, story)
 	story.save
 end
 
-def get_all_top_stories
-
-	stories = TopStory.all
-
+def update_stories_info(stories)
 	stories.each do |story|
 
 		story_info = parse_story_details(story)
 		update_story(story_info, story)
 
 	end
+end
+
+def update_logs
+	File.open('/vagrant/scripts/output.txt', 'a') do |f|
+		f.write << "Last updated " + Time.now
+	end	
+end
+
+def get_all_top_stories
+
+	stories = TopStory.all
+	update_stories_info(stories)
+	update_logs
+	
 end
 
 get_all_top_stories
