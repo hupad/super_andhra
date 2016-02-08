@@ -1,6 +1,6 @@
-# Super Andhra
-# A simple sinatra app.
+# An App that fetches top stories from a web site
+# A Sinatra App
 
-The idea here is to scrape a news feed database fetch the feed and create end point to serve an iPhone app.
+The idea here is to scrape a website and get their top stories and push them to a database.
 
-Eventually, it will scrape all news feed and serves that feed to an iPhone app, which will be a single repo for all the news.
+Create an end point that will serve an iPhone app.
